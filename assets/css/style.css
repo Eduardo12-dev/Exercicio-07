@@ -16,8 +16,14 @@ header{
     padding: 1rem;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
 .logo{
-    font-size: 1.3125rem;
+    font-size: 1.3125rem; /* BeautySalon*/
 }
 .logo span{
     color: #69B99D;
@@ -25,37 +31,70 @@ header{
 
 .toggle{
     display: flex;
-    padding-left: 20rem;
-    font-size: 2em;
+    font-size: 2rem;
     color: #69B99D;
-    
 }
 
-section .line01 .line02{
+.icon-menu {
+    display: flex; /* Coloca logo e toggle lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between;
+    color: #69B99D; /* Espaço entre logo e toggle */
+    margin-left: 10rem;
+}
+
+
+section .line01 .line02 .line03 .line04{
     display: flex;
 }
 
-.line01{
-    padding-top: 2rem;
+section .line05 {
+  display: flex;
+  flex-wrap: wrap; /* se quiser que os filhos quebrem linha se necessário */
 }
 
-.line01 .box-left img {
-    display: flex;
-    height: 25px;
-    max-width: 45px;
+
+.line01 .box-left img{
+    width: 21rem;
+    height: 14rem;
+    position: absolute; /* ou relative */;
+    margin-right: 1rem;
+    margin-top: 2.4rem;
+    border-radius: 0.25rem;
+}
+
+.line01 .box-right{
+    background-color: #CCF4E6;
+width: 347.89px;
+height: 242.26px;
+margin-top: 1rem;
+margin-left: 5rem;
+border-radius: 4px;
 }
 
 .line02 h2{
-    padding-top: 20.5625rem;
+    padding-top: 3rem;
     justify-self: center;
     font-size: 1.875rem;
+    font-weight: 700;
+    
 }
 
+.line02 h2 span{
+    margin-left: 1rem;
+}
+
+.line02 p span{
+    margin-left: 1rem;
+}
 
 .line02 p{
     padding-top: 1rem;
     color: #767676;
     justify-self: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 section .line02 button{
@@ -73,5 +112,421 @@ section .line02 button{
     font-size: 1rem;
     margin-top: 2rem;
     color: #F9F9F9;
+    margin-bottom: 7rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
 }
 
+
+.line03 .box-left img{
+    width: 24rem;
+    height: 16rem;
+    position: absolute; /* ou relative */;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}
+
+.line03 .box-right{
+    background-color: #CCF4E6;
+width: 22rem;
+height: 15rem;
+bottom: 2rem;
+margin-left: -5rem;
+border-radius: 4px;
+}
+
+.Sobre h2{
+    padding-top: 4rem;
+    padding-left: 1rem;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.Sobre p{
+    padding-top: 1rem;
+    color: #767676;
+    font-size: 1rem;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.Serviços h2{
+    padding-top: 3rem;
+    padding-left: 1rem;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.line04 .Serviços p{
+    padding-top: 1rem;
+    font-size: 1rem;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 3rem
+}
+
+.line04 .Serviços p span{
+    color: #69B99D;
+    font-weight: 700;
+}
+
+.line04 .col {
+    width: 20rem;
+    height: 23rem;
+    background-color: #ffffff;
+    padding: 4rem 0.7rem 2rem 0.7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border-bottom: 0.25rem solid mediumseagreen;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.line04 .col h2{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.line04 .col .symbols {
+    display: flex; 
+    justify-content: space-between;
+    color: #69B99D; 
+    margin-left: 6.5rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.line04 .col p {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+    letter-spacing: 0.031rem;
+    margin: 0 auto;
+}
+
+.line04 .col2 {
+    width: 20rem;
+    height: 23rem;
+    background-color: #ffffff;
+    padding: 4rem 0.7rem 2rem 0.7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border-bottom: 0.25rem solid mediumseagreen;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.col2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.line04 .col2 h2{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-left: 6.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.line04 .col2 .symbols {
+    display: flex; 
+    justify-content: space-between;
+    color: #69B99D; 
+    margin-left: 6.5rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.line04 .col2 p{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+    letter-spacing: 0.031rem;
+    margin: 0 auto;
+}
+
+
+.line04 .col3 {
+    width: 20rem;
+    height: 23rem;
+    background-color: #ffffff;
+    padding: 4rem 0.7rem 2rem 0.7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 6rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border-bottom: 0.25rem solid mediumseagreen;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.col3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.line04 .col3 h2{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+.line04 .col3 .symbols {
+    display: flex; 
+    justify-content: space-between;
+    color: #69B99D; 
+    margin-left: 6.5rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.line04 .col3 p{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+    letter-spacing: 0.031rem;
+    margin: 0 auto;
+}
+
+.line04 .col3 {
+    width: 20rem;
+    height: 23rem;
+    background-color: #ffffff;
+    padding: 4rem 0.7rem 2rem 0.7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 6rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border-bottom: 0.25rem solid mediumseagreen;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.line05 .Depoimentos h2{
+    padding-left: 1rem;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.line05 .col4 {
+    width: 327px;
+    height: 310px;
+    background-color: #ffffff;
+    padding: 2rem 0.3rem 2rem 0.3rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-height: 310px;
+    position: relative;
+}
+
+
+.line05 .col4 p{
+    font-size: 16px;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem
+}
+
+.line05 .col4 p span{
+    font-size: 30px;
+    color: #00b894; /* Cor da aspa */
+    font-weight: bold;
+    margin-right: 8px;
+} 
+
+.avatar {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.line05 .col4 .avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover;
+    margin-right: 5px;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+}
+
+.line05 .col4 .avatar p{
+    color: Gray;
+    margin-bottom: 4rem;
+}
+
+
+.line05 .balls{
+    display: flex;
+    flex-direction: row;
+    margin-left: 9rem;
+    margin-bottom: 5rem;
+}
+.line05 .balls .ball{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: #E4E4E4;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.line05 .balls  .active{
+    background-color: #00b894;
+}
+
+.line06 .Contato h2{
+    padding-top: 4rem;
+    padding-left: 1rem;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.Contato p{
+    padding-top: 1rem;
+    color: #767676;
+    font-size: 1rem;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.line06 button{
+    display: flex;
+    width: 13.375rem;
+    height: 3.5rem;
+    background-color: #69B99D;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-top: 1.7rem;
+    margin-left: 1.1rem;
+    color: #F9F9F9;
+    margin-bottom: 4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+
+
+.line06 .icon-whatsapp{
+    color: #F9F9F9;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.line06 ul .text{
+    margin-left: 1.5rem;
+}
+
+.line06 ul {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 1rem;
+    color: #767676;
+    list-style: none; /* Remove a bolinha padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.line06 li span{
+    margin-bottom: 1rem;     /* Espaçamento entre os itens */
+    gap: 12rem;
+}
+
+.line06 ul li span{
+    align-items: center;
+}
+
+.line06  ul li {
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.line06 ul .icon-map-pin{
+    color: #00b894;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+}
+
+.line06 ul .icon-mail{
+    color: #00b894;
+    font-size: 1.5rem;
+}
+
+.line07{
+    background-color: #69B99D;
+    width: 375px;
+    height: 294px;
+}
+
+
+.line07 .logo2 h2{
+    font-weight: 700;
+    font-size: 14px;
+    color: #0F241D;
+
+}
+
+.line07 .logo2 span{
+    color: #F9F9F9;
+}
+
+.line07 ul{
+    color: #F9F9F9;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
